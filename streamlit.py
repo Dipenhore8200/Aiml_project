@@ -14,7 +14,7 @@ def predict_values(input_features):
         prediction = xgboost.predict(input_array)
 
         # You can format the prediction as needed
-       if prediction[0] == 0:
+        if prediction[0] == 0:
             formatted_prediction = 'The predicted value is negative.'
         else:
             formatted_prediction = 'The predicted value is positive.'
