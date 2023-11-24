@@ -2,22 +2,10 @@ import streamlit as st
 import pickle
 import numpy as np
 import os
-import requests
-from io import BytesIO
-
-# Function to download the model file from GitHub
-def download_model():
-    
-    url = 'https://raw.githubusercontent.com/Dipenhore8200/Aiml_project/blob/main/xgb.pkl'
-    response = requests.get(url)
-    model_bytes = BytesIO(response.content)
-    return pickle.load(model_bytes)
-
+import xgboost as xgb
 # Load the pre-trained machine learning model
-xgboost = download_model()
-
-# Load the pre-trained machine learning model
-xgboost = pickle.load(open('xgb.pkl', 'rb'))
+xgboost =  xgb.XGBClassifier()
+xgboost.load_model('xgb.model')
 
 def predict_values(input_features):
     try:
