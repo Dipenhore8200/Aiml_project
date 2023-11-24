@@ -33,7 +33,7 @@ def main():
 
     # Fieldset 1: Network Properties
     st.header('Network Properties')
-    subgraph = st.number_input('Subgraph', value=0.000000)
+    subgraph = st.number_input('Subgraph', value=0.000005)
     degree = st.number_input('Degree', value=0.0)
     eigenvector = st.number_input('Eigenvector', value=0.0000000)
     information = st.number_input('Information', value=0.0000000)
