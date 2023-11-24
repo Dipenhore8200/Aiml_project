@@ -17,9 +17,9 @@ def predict_values(input_features):
 
         # You can format the prediction as needed
         if prediction[0] == 0:
-            formatted_prediction = 'The predicted value is negative.'
+            formatted_prediction = 'the prtein is HIV positive'
         else:
-            formatted_prediction = 'The predicted value is positive.'
+            formatted_prediction = 'the prtein is HIV Negative'
 
         return formatted_prediction
 
