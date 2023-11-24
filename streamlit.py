@@ -7,7 +7,8 @@ from io import BytesIO
 
 # Function to download the model file from GitHub
 def download_model():
-    url = 'https://raw.githubusercontent.com/Dipenhore8200/Aiml_project/master/path-to-your-model/xgb.pkl'
+    
+    url = 'https://raw.githubusercontent.com/Dipenhore8200/Aiml_project/main/xgb.pkl'
     response = requests.get(url)
     model_bytes = BytesIO(response.content)
     return pickle.load(model_bytes)
