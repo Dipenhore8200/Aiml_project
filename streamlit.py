@@ -103,6 +103,8 @@ def main():
     ser_v = st.number_input('SER-V', value=0.0)
     ser_w = st.number_input('SER-W', value=0.0)
     ser_y = st.number_input('SER-Y', value=0.0)
+    st.header('Shannon Entropy of protien')
+    sep_pp = st.number_input('SEp-pp', value=0.0)
 
     # Create a list of input features
     input_features = [
@@ -113,7 +115,7 @@ def main():
         secondary_structure_helix, secondary_structure_strands, secondary_structure_coil,
         solvent_accessibility_buried, solvent_accessibility_exposed, solvent_accessibility_intermediate,
         ser_a, ser_c, ser_d, ser_e, ser_f, ser_g, ser_h, ser_i, ser_k, ser_l, ser_m, ser_n,
-        ser_p, ser_q, ser_r, ser_s, ser_t, ser_v, ser_w, ser_y
+        ser_p, ser_q, ser_r, ser_s, ser_t, ser_v, ser_w, ser_y, sep_pp
     ]
 
     # Make prediction when the button is clicked
