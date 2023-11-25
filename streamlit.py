@@ -29,6 +29,17 @@ def predict_values(input_features):
         return error_message
 
 def main():
+    st.markdown(
+        """
+        <style>
+            body {
+                background-image: url('img.jpg');
+                background-size: cover;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
     st.title('Your Machine Learning Web App')
 
     # Fieldset 1: Network Properties
