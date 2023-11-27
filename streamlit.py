@@ -6,7 +6,11 @@ import xgboost as xgb
 # Load the pre-trained machine learning model
 xgboost =  xgb.XGBClassifier()
 xgboost.load_model('xgb.model')
+def load_css():
+    with open("style.css") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
+load_css()
 def predict_values(input_features):
     try:
         # Convert the list to a NumPy array with shape (1, -1)
