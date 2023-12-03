@@ -1,5 +1,8 @@
-streamlit
-xgboost
 numpy
 pandas
+xgboost
+fastapi
 scikit-learn
+uvicorn
+Jinja2
+python-multipart
