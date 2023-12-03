@@ -16,7 +16,7 @@ app.mount("/templates", StaticFiles(directory="templates"), name="templates")
 
 xgboost = xgb.XGBClassifier()
 xgboost.load_model('xgb.model')
-df = pd.read_csv("hiv_dataset_deployment.csv")
+df = pd.read_csv("E:\\final year project\\New folder\\hiv_dataset_deployment.csv")
 
 def predict_values(input_features):
     try:
@@ -135,4 +135,4 @@ async def predict(
         ]
     prediction = predict_values(input_features)
    
-    return templates.TemplateResponse("ss.html", {"request": request, "total_sum": prediction})
+    return templates.TemplateResponse("ss.html", {"request": request, "value": prediction})
