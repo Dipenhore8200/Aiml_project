@@ -16,7 +16,7 @@ app.mount("/templates", StaticFiles(directory="templates"), name="templates")
 
 xgboost = xgb.XGBClassifier()
 xgboost.load_model('xgb.model')
-df = pd.read_csv("E:\\final year project\\New folder\\hiv_dataset_deployment.csv")
+df = pd.read_csv("hiv_dataset_deployment.csv")
 
 def predict_values(input_features):
     try:
