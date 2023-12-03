@@ -644,10 +644,18 @@ const proteinOptions = ['Q9HBW0', 'P60568', 'P09651', 'Q6Q788', 'P43629', 'P0863
         {% if selected_protein %}
           <h2>predicted Value: {{ selected_protein }}</h2>
           <p>Actual value: {{ selected_proteinA }}</p>
+<script>
+                // Scroll to the bottom of the page
+                window.scrollTo(0, document.body.scrollHeight);
+            </script>
         {% endif %}
 
-        {% if total_sum %}
-          <h2>predicted Value:{{ total_sum}}</h2>
+        {% if value %}
+          <h2>predicted Value:{{ value}}</h2>
+	<script>
+                // Scroll to the bottom of the page
+                window.scrollTo(0, document.body.scrollHeight);
+            </script>
         {% endif %}
         <div id="result"></div>
       </div>
